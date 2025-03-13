@@ -1,0 +1,138 @@
+/* Fondo con degradado */
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(180deg, #40008c, #6900aa, #9100c9, #ba00e9);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.cv-container {
+    max-width: 900px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+.cv-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; 
+    display: flex;
+    flex-direction: row;
+}
+
+/* Panel Izquierdo */
+.left-panel {
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    width: 35%;
+    text-align: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px; /* Asegura que sea un cuadrado */
+    border-radius: 50%; /* Hace que sea un círculo */
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+}
+
+.profile-name {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.profile-role {
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Contacto */
+.contact-section p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Sección de habilidades */
+.skills-section ul,
+.languages-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-section li,
+.languages-section li {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Panel Derecho */
+.right-panel {
+    width: 65%;
+    padding: 20px;
+}
+
+/* Secciones */
+.experience-section,
+.education-section {
+    margin-bottom: 20px;
+}
+
+.experience-item,
+.education-item {
+    margin-bottom: 15px;
+}
+
+.date {
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Footer */
+.cv-footer {
+    text-align: center;
+    padding: 15px;
+    background: #39007D ;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.social-icons i {
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #ba00e9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.project-item{
+    margin-bottom: 20px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .cv-grid {
+        flex-direction: column;
+    }
+    .left-panel {
+        width: 100%;
+    }
+    .right-panel {
+        width: 100%;
+    }
+}
