@@ -78,6 +78,11 @@ body {
     padding: 20px;
 }
 
+.separator{
+    border: none;
+    height: 2px;
+    background-image: linear-gradient(180deg, #40008c, #6900aa, #9100c9, #ba00e9)}
+
 /* Secciones */
 .experience-section,
 .education-section {
@@ -94,19 +99,6 @@ body {
     color: #bbb;
 }
 
-/* Footer */
-.cv-footer {
-    text-align: center;
-    padding: 15px;
-    background: #39007D ;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
-}
-
-.social-icons i {
-    font-size: 20px;
-    margin: 5px;
-    cursor: pointer;
-}
 
 .btn {
     display: inline-block;
@@ -118,13 +110,92 @@ body {
     margin-top: 10px;
 }
 
-.project-item{
-    margin-bottom: 20px;
-    background-color: #fff;
-    color: #333;
+.btn:hover {
+    background: #6a21c1;
+    box-shadow: #39007D 0px 0px 10px;
+
 }
 
-/* Responsive */
+/* Estilo para el título de la sección de proyectos */
+.section-title {
+    text-align: center; 
+    font-size: 50px; 
+    margin-top: 80px; /* Espacio superior */
+    margin-bottom: 40px;
+    text-shadow: #39007D 3px 3px 10px;
+}
+
+/* Estilo para la sección de proyectos */
+.projects-section {
+    margin: 0 auto;
+    margin-bottom: 80px;
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    flex-direction: row; /* Disposición en fila */
+    justify-content:center;
+    gap: 40px;
+    align-items: center;
+    box-shadow: #222 0px 0px 10px;
+    border-radius: 10px;
+    max-width: 1200px;
+}
+
+/* Estilo para los elementos individuales de cada proyecto */
+.project-item {
+    color: #333; /* Color del texto */
+    text-align: center; /* Centrado del texto */
+    max-width: 300px; /* Limita el ancho de cada item */
+    width: 100%; /* Asegura que el item no se desborde */
+    box-sizing: border-box; /* Asegura que padding no afecte el tamaño */
+}
+
+.hackathon-section {
+    margin: 0 auto;
+    margin-bottom: 80px;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: row; /* Disposición en fila */
+    justify-content:center;
+    gap: 40px;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center; /* Centrado del texto */
+    max-width: 300px; /* Limita el ancho de cada item */
+    width: 100%; /* Asegura que el item no se desborde */
+    box-sizing: border-box; /* Asegura que padding no afecte el tamaño */
+}
+.profile-description p{
+    text-align: justify;
+}
+
+.hackathon2025-img{
+    width: 300px;
+    height: 150px; /* Asegura que sea un cuadrado */
+    border-radius: 30px; /* Hace que sea un círculo */
+    object-fit: cover; /* Ajusta la imagen dentro del */
+}
+
+/* Footer */
+.cv-footer {
+    text-align: center;
+    padding: 15px;
+    background: #39007D ;
+    box-shadow: #000 0 0 10px ;
+    border-top-left-radius: 8%;
+    border-top-right-radius: 8%;
+
+}
+
+.social-icons i {
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+    /* Responsive */
 @media screen and (max-width: 768px) {
     .cv-grid {
         flex-direction: column;
