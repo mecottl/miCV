@@ -241,7 +241,7 @@ a{
 }
 
 /* Responsive para iPhone 15 Pro */
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 430px) {
     /* Ajustes para el contenedor principal */
     .cv-container {
         max-width: 100%;
